@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thần số học</title>
+</head>
+<style>
+    label {
+        color: blue;
+        font-size: larger;
+    }
+
+    input {
+        overflow: visible;
+        width: 230px;
+        height: 30px;
+        border-color: bisque;
+    }
+
+    button {
+        background-color: hotpink;
+        text-transform: none;
+        overflow: visible;
+        border-radius: 7px;
+        border-color: #FE4365;
+        padding: 0.5em 1em;
+        cursor: pointer;
+    }
+
+    .HienThiThongSo {
+        padding-left: 50px;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .divLeft {
+        width: 35%;
+        float: left;
+    }
+
+    .divRight {
+        width: 60%;
+        float: left;
+    }
+
+</style>
+
+<body>
+
+<div>
+    <div class="divLeft">
+        <form id="form">
+            <div>
+                <ul class="formTen">
+                    <label>Họ Và Tên:</label>
+                    <input id="name" value="" placeholder="Nhập Họ Tên không dấu">
+                </ul>
+                <ul class="formNgaySinh" style="margin-top: 20px">
+                    <label>Ngày Sinh :</label>
+                    <input type="text" value="" class="birthday" id="birthday"><br><br>
+                    <div align="center">
+                        <button type="button" onclick="xuLyThongTin()" onkeyup="xuLyThongTin()"
+                                onkeydown="xuLyThongTin()" id="show1" class="show">TÍNH TOÁN
+                        </button>
+                        <button type="button" onclick="xoa()" id="" class="show">XÓA</button>
+                    </div>
+
+                </ul>
+            </div>
+        </form>
+        <div class="HienThiThongSo">
+            <p id="hienthiJs"></p>
+        </div>
+    </div>
+
+
+    <div class="divRight">
+
+    </div>
+</div>
+
+
+<script src="jsThanSo.js"></script>
+</body>
+</html>
